@@ -1,126 +1,57 @@
 ---
-title: "Event 2"
+title: "Event 3"
 date: 2024-01-01
-weight: 3
+weight: 1
 chapter: false
 pre: " <b> 4.3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+# Event Review: June 20th Tech Event
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+### Purpose of the Event
 
-### Event Objectives
+- Create an academic platform to help interns review, test, and consolidate in-depth knowledge of Amazon Web Services (AWS) services.
+- Train teamwork skills, critical thinking, and strategic decision-making under time pressure.
+- Connect the intern community, socialize, and learn directly from mentors through challenging real-world case studies.
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+### Coordination Team
 
-### Speakers
+- **FCAJ Mentors**: Acting as the jury and coordinators. They not only heated up the event atmosphere but also thoroughly explained difficult questions, helping contestants understand the technical essence rather than just the answers.
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+### Key Highlights: The Tournament Flow
+- The competition took place as a direct head-to-head match between teams, using AWS quiz sets and scenarios. A tactical highlight of the competition was the use of the **"Lucky Star"**, which offered a chance to turn the tables but also carried a high risk.
 
-### Key Highlights
+#### Qualifying Round (4 Intense Matches)
 
-#### Identifying the drawbacks of legacy application architecture
+- **Match 1 (Set 3): primeOps vs KLKAT**
+  - Both teams closely followed each other through 10 questions. **KLKAT** made a spectacular comeback when they decided to use the "Lucky Star" on the final 50-point question to secure a convincing win.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- **Match 2 (Set 1): YoungflameIt vs Teamnewbies**
+  - The script of Match 1 repeated as **YoungflameIt** showed outstanding calculation and boldness. They used their "Lucky Star" on the final deciding question, successfully turning the match around to advance.
 
-#### Transitioning to modern application architecture – Microservices
+- **Match 3 (Set 2): Loser vs Ngũ đại hiệp**
+  - **Ngũ đại hiệp** displayed calm and confident play, accumulating points steadily and winning dominantly without using the "Lucky Star". On the other hand, the **Loser** team, as the name implies, gambled everything on the "Lucky Star" in the last question but answered incorrectly, falling far behind in score.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- **Match 4 (Set 5): Gặp phải thằng liều vs Life long learner**
+  - This was the most stressful match of the qualifying round, with both teams tied with perfect scores up to question 10. The organizers had to use question 10 of Set 4 as a tie-breaker. With exceptional speed and precision, **Life long learner** won the match.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### Semi-Finals (Finding the Finalists)
 
-#### Domain-Driven Design (DDD)
+- **Semi-Final 1 (Set 7): KLKAT vs YoungflameIt**
+  - The two "comeback kings" of the qualifying round faced each other, resulting in a breathless struggle. The turning point came in question 9 when **KLKAT** decided to deploy the "Lucky Star" early, answered correctly, and established a safe lead. Pushed into a corner, **YoungflameIt** was forced to use their star on question 10 but unfortunately answered incorrectly. **KLKAT** advanced to the finals.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+- **Semi-Final 2 (Set 6): Ngũ đại hiệp vs Life long learner**
+  - **Life long learner** started very well and took an early lead. However, as the questions grew in difficulty, the composure and solid knowledge base of **Ngũ đại hiệp** paid off. They gradually tied the score, surged ahead, and secured their spot in the final match.
+  > (Note: The Final Match between KLKAT and Ngũ đại hiệp will be postponed to a future event).
 
-#### Event-Driven Architecture
+### Lessons Learned
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+### Consolidation & Expansion of Deep AWS Knowledge:
+- Reviewed and structured technical knowledge through multiple-choice questions and real-world scenarios (case studies).
+- Gained a deep understanding of the core technical nature of AWS services thanks to detailed and direct explanations from experienced Mentors (FCAJ).
+### Soft Skills Enhancement & Strategic Mindset:
+- **Strategic Thinking Under Pressure**: Learned risk management and decision-making timing (utilizing the Lucky Star to break through or preserve safe scores).
+- **Quick Reflexes & Teamwork Spirit**: Developed team coordination, maintained composure, and exercised problem-solving skills during intense, tight matches (such as the Tie-breaker round).
 
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
-
-### Key Takeaways
-
-#### Design Mindset
-
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
-
-#### Technical Architecture
-
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
-
-### Event Experience
-
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
-
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+### Networking & Community Building:
+- Fostered a healthy academic competition environment, closely connecting the intern community and bridging the gap between interns and senior Mentors.

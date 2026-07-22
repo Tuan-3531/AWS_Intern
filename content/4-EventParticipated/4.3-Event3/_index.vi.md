@@ -1,125 +1,61 @@
 ---
-title: "Event 2"
+title: "Event 3"
 date: 2024-01-01
-weight: 3
+weight: 1
 chapter: false
 pre: " <b> 4.3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch sự kiện ngày 20/06
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Tạo sân chơi học thuật giúp các thực tập sinh ôn tập, kiểm tra và củng cố kiến thức chuyên sâu về các dịch vụ của Amazon Web Services (AWS).  
+- Rèn luyện kỹ năng làm việc nhóm, khả năng tư duy phản biện và đưa ra quyết định chiến lược dưới áp lực thời gian.  
+- Kết nối cộng đồng thực tập sinh, giao lưu và học hỏi kinh nghiệm trực tiếp từ các anh chị đi trước thông qua việc giải đáp các case-study khó.
 
-### Danh Sách Diễn Giả
+### Thành Phần Điều Phối
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **Các anh chị Mentor từ FCAJ**: Đóng vai trò ban giám khảo, người điều phối chương trình. Các anh chị không chỉ khuấy động, "làm nóng" không khí sự kiện mà còn trực tiếp giải thích cặn kẽ những câu hỏi khó, giúp thí sinh hiểu rõ bản chất kỹ thuật thay vì chỉ biết đáp án.
 
-### Nội Dung Nổi Bật
+### Nội Dung Nổi Bật: Diễn Biến Cuộc Thi
+- Sự kiện diễn ra dưới hình thức thi đấu đối kháng trực tiếp giữa các đội, sử dụng các bộ đề trắc nghiệm và tình huống AWS. Điểm nhấn chiến thuật của cuộc thi là quyền sử dụng **"Ngôi sao may mắn"**, mang lại cơ hội lật ngược thế cờ nhưng cũng đi kèm rủi ro lớn.
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Vòng Loại (4 Trận Cực Kỳ Kịch Tính)
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+- **Trận 1 (Bộ đề 3): primeOps vs KLKAT**
+    - Hai đội bám đuổi sát sao qua 10 câu hỏi. Đội **KLKAT** đã tạo nên một màn lội ngược dòng ngoạn mục khi quyết định sử dụng "ngôi sao may mắn" ở câu hỏi cuối cùng trị giá 50 điểm để giành chiến thắng thuyết phục.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+- **Trận 2 (Bộ đề 1): YoungflameIt vs Teamnewbies**
+    - Kịch bản của trận 1 lặp lại khi **YoungflameIt** thể hiện sự liều lĩnh và tính toán xuất sắc. Họ dùng "ngôi sao may mắn" ở câu quyết định cuối cùng, lội ngược dòng thành công và giành vé đi tiếp.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+- **Trận 3 (Bộ đề 2): Loser vs Ngũ đại hiệp**
+    - Đội **Ngũ đại hiệp** thể hiện một phong độ cực kỳ bình tĩnh và tự tin, họ chắt chiu điểm số qua từng câu và giành chiến thắng áp đảo mà không cần dùng đến ngôi sao may mắn. Ngược lại, đội **Loser** đúng như tên gọi, đã đánh cược tất cả bằng ngôi sao may mắn ở câu cuối nhưng trả lời sai, dẫn đến việc bị bỏ xa về mặt điểm số.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+- **Trận 4 (Bộ đề 5): Gặp phải thằng liều vs Life long learner**
+    - Đây là trận đấu căng thẳng nhất vòng loại khi hai đội hòa nhau với điểm số tuyệt đối cho đến tận câu 10. Ban tổ chức buộc phải sử dụng câu 10 của bộ đề số 4 làm câu hỏi phụ (tie-breaker) để phân thắng bại. Bằng sự xuất sắc và nhanh nhạy, **Life long learner** đã giành chiến thắng chung cuộc.
 
-#### Domain-Driven Design (DDD)
+#### Vòng Bán Kết (Đi Tìm Nhà Vô Địch)
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+- **Bán kết 1 (Bộ đề 7): KLKAT vs YoungflameIt**
+    - Hai "ông vua lội ngược dòng" của vòng loại đối đầu nhau, tạo ra thế trận giằng co nghẹt thở. Bước ngoặt xảy ra ở câu số 9 khi **KLKAT** quyết định tung "ngôi sao may mắn" sớm, trả lời chính xác và tạo ra cách biệt điểm số an toàn. Bị dồn vào chân tường, **YoungflameIt** buộc phải dùng ngôi sao ở câu 10 để tìm cơ hội lật lọng, nhưng rất tiếc họ đã trả lời sai. **KLKAT** hiên ngang bước vào chung kết
 
-#### Event-Driven Architecture
+- **Bán kết 2 (Bộ đề 6): Ngũ đại hiệp vs Life long learner**
+    - Đội **Life long learner** mở đầu rất tốt và tạm vươn lên dẫn trước. Tuy nhiên, khi các câu hỏi về sau ngày càng tăng độ khó, sự điềm tĩnh và nền tảng kiến thức vững chắc của **Ngũ đại hiệp** đã phát huy tác dụng. Họ từ từ san bằng tỷ số, sau đó vượt lên mạnh mẽ và giành chiến thắng, chính thức ghi tên mình vào trận đấu cuối cùng.
+>(Lưu ý: Trận Chung Kết giữa KLKAT và Ngũ đại hiệp sẽ được dời lịch tổ chức vào một sự kiện khác).
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
 
 ### Những Gì Học Được
+### Củng cố & Mở rộng kiến thức chuyên sâu về AWS:
 
-#### Tư Duy Thiết Kế
+- Ôn tập và hệ thống hóa kiến thức kỹ thuật thông qua các bộ đề trắc nghiệm và tình huống thực tế (case studies).
+- Thấu hiểu sâu sắc bản chất kỹ thuật của các dịch vụ AWS nhờ phần giải đáp cặn kẽ và trực tiếp từ các anh/chị Mentor kinh nghiệm (FCAJ).
+### Rèn luyện kỹ năng mềm & Tư duy chiến thuật:
+- **Tư duy chiến lược dưới áp lực**: Học cách quản trị rủi ro và ra quyết định thời điểm thích hợp (sử dụng Ngôi sao may mắn để bứt phá hoặc giữ điểm an toàn).
+- **Phản ứng nhanh & Tinh thần đồng đội**: Rèn luyện khả năng phối hợp nhóm, duy trì sự điềm tĩnh và bản lĩnh xử lý tình huống trong các thế trận giằng co nghẹt thở (như trận đấu câu hỏi phụ Tie-breaker).
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+### Giao lưu & Phát triển cộng đồng:
+- Tạo dựng môi trường thi đấu học thuật lành mạnh,
 
-#### Kiến Trúc Kỹ Thuật
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
